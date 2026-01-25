@@ -11,7 +11,3 @@ def assess_depression(data: DepressionRequest):
 @router.get("/info", tags=["Depression"])
 def info():
     return {"service": "Deression Assesment API", "version": "1.0"}
-
-@router.delete("/depression", tags=["Depression"])
-def delete_depression_record(record_id: int, data: DepressionUpdate):
-    return {"service": "Deression Assesment API", "version": "1.0"}
