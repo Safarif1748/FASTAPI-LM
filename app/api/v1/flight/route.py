@@ -8,3 +8,7 @@ router = APIRouter()
 def get_flight_price_prediction(data: FlightRequest):
     prediction = predict_price(data)
     return prediction
+
+@router.get("/health", tags=["Recommendation"])
+def health_check():
+    return {"Status": "Okay!"}

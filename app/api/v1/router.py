@@ -10,4 +10,17 @@ app_router.include_router(
     tags=['Recommendations']
 )
 
+app_router.include_router(
+    recommend_router,
+    prefix='/depression',
+    tags=['Depression']
+)
+
+app_router.include_router(
+    recommend_router,
+    prefix='/fight',
+    tags=['Fight']
+)
+
+
 
